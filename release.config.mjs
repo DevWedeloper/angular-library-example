@@ -19,8 +19,12 @@ export default {
   },
   releaseRules: [{ type: 'refactor', release: 'patch' }],
   plugins: [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
+    ['@semantic-release/commit-analyzer', {
+      path: 'projects/ui-button'
+    }],
+    ['@semantic-release/release-notes-generator', {
+      path: 'projects/ui-button'
+    }],
     ['@semantic-release/npm', { 
       pkgRoot: './dist/ui-button',
       tarballDir: 'dist'
