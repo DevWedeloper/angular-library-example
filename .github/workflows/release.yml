@@ -38,7 +38,7 @@ jobs:
 
       # Build your library
       - name: Build ui-button
-        run: pnpm run build
+        run: pnpm ng build ui-button
 
       # Release using semantic-release
       - name: Semantic Release
