@@ -22,7 +22,7 @@ export default {
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     ['@semantic-release/npm', { 
-      pkgRoot: './dist/ui-button',
+      pkgRoot: 'projects/ui-button',
       tarballDir: 'dist'
     }],
     ['@semantic-release/git', {
